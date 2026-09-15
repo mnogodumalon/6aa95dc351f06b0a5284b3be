@@ -1,0 +1,61 @@
+{
+  "EinrichtungenDialog.tsx": {
+    "name": "z. B. Kita Regenbogen",
+    "traegerart": "Trägerart auswählen",
+    "beschreibung": "Ausstattung, Pädagogisches Konzept, Besonderheiten",
+    "strasse": "z. B. Hauptstraße",
+    "hausnummer": "z. B. 42",
+    "plz": "z. B. 91301",
+    "ort": "z. B. Forchheim",
+    "telefon": "z. B. 09191/234567",
+    "email": "z. B. info@regenbogen-kita.de",
+    "betreuungsformen": "Krippe, Kindergarten und/oder Hort?",
+    "oeffnungszeiten": "Eine Zeile pro Betreuungsform – z. B. Mo-Fr 6:30-17:00"
+  },
+  "MitarbeiterDialog.tsx": {
+    "vorname": "z. B. Anna",
+    "nachname": "z. B. Müller",
+    "rolle": "Rolle auswählen",
+    "einrichtung": "Welche Einrichtung?",
+    "email_ma": "z. B. anna@forchheim.de",
+    "telefon_ma": "z. B. 09191/123456"
+  },
+  "PlatzkontingenteDialog.tsx": {
+    "einrichtung": "Welche Einrichtung?",
+    "kita_jahr": "z. B. 2026/27",
+    "betreuungsform": "Betreuungsform auswählen",
+    "plaetze_gesamt": "z. B. 15"
+  },
+  "KinderDialog.tsx": {
+    "vorname": "z. B. Emma",
+    "nachname": "z. B. Schneider",
+    "geburtsdatum": "Wann wurde das Kind geboren?",
+    "geschlecht": "Geschlecht auswählen",
+    "strasse": "z. B. Schulstraße",
+    "hausnummer": "z. B. 7",
+    "plz": "z. B. 91301",
+    "ort": "z. B. Forchheim",
+    "besonderheiten": "Allergien, Förderbedarf, besondere Hinweise",
+    "geschwisterkind": "Bereits ein Geschwister in einer Einrichtung?"
+  },
+  "AnfragenDialog.tsx": {
+    "kind": "Welches Kind?",
+    "eltern_vorname": "z. B. Thomas",
+    "eltern_nachname": "z. B. Schmidt",
+    "eltern_email": "z. B. thomas.schmidt@mail.de",
+    "eltern_telefon": "z. B. 0170/1234567",
+    "einrichtung": "1. Wunsch – Welche Einrichtung?",
+    "zweitwunsch_einrichtung": "2. Wunsch – Alternative?",
+    "betreuungsform": "Betreuungsform auswählen",
+    "gewuenschter_start": "Wann soll die Betreuung starten?",
+    "betreuungsumfang": "Betreuungsumfang auswählen",
+    "berufstaetig": "Beide Elternteile berufstätig?",
+    "anfragenummer": "z. B. ANF-2026-001",
+    "eingegangen_am": "Wann ist die Anfrage eingegangen?",
+    "status": "Status auswählen",
+    "wartelistenplatz": "z. B. 3",
+    "entscheidung_am": "Wann wurde die Entscheidung getroffen?",
+    "ablehnungsgrund": "Begründung für die Ablehnung",
+    "interne_notizen": "Besonderheiten, Rückfragen, Vermerke"
+  }
+}

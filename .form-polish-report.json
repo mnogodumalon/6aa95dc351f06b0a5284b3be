@@ -1,0 +1,34 @@
+{
+  "entities": {
+    "Einrichtungen": {
+      "placeholders_set": 11,
+      "defaults_keys": ["traegerart"],
+      "computed_keys": [],
+      "reason": "Reine Stammdaten für Kita-Einrichtungen (Name, Adresse, Kontakt, Öffnungszeiten). Keine number-Felder, keine Berechnung, keine applookup-Preis-Targets. Ein Default für Trägerart (Frei) gesetzt als häufige Voreinstellung."
+    },
+    "Mitarbeiter": {
+      "placeholders_set": 6,
+      "defaults_keys": ["rolle"],
+      "computed_keys": [],
+      "reason": "Stammdaten für Mitarbeiter (Name, Rolle, Kontakt, Einrichtung). Keine number-Felder, keine Berechnung. Default für Rolle auf ‚Einrichtungsleitung' gesetzt als typischer Default beim Anlegen."
+    },
+    "Platzkontingente": {
+      "placeholders_set": 4,
+      "defaults_keys": ["betreuungsform", "plaetze_gesamt"],
+      "computed_keys": [],
+      "reason": "Contingent-Verwaltung pro Einrichtung, Kita-Jahr und Betreuungsform. Number-Feld (plaetze_gesamt) ist eingegeben, nicht berechnet. Defaults für Betreuungsform (Kindergarten) und plaetze_gesamt=1 zur Orientierung."
+    },
+    "Kinder": {
+      "placeholders_set": 10,
+      "defaults_keys": [],
+      "computed_keys": [],
+      "reason": "Kinderstammdaten (Name, Geburtsdatum, Adresse, Besonderheiten, Geschlecht, Geschwisterkind). Nur ein Date-Feld (Geburtsdatum), kein Datumspaar für Dauer. Keine number-Felder, keine Berechnung möglich."
+    },
+    "Anfragen": {
+      "placeholders_set": 17,
+      "defaults_keys": ["eingegangen_am", "status", "berufstaetig"],
+      "computed_keys": [],
+      "reason": "Zentrale Anfrage-Entity mit Status-Pipeline und Eltern-/Kind-Kontakt. Datumspaar (eingegangen_am + entscheidung_am) ist optional und nicht für Dauer-Berechnung relevant. Number-Feld (wartelistenplatz) ist optional und manuell gesetzt. Keine applookup-Preis-Targets → keine computed-Formeln. Defaults: eingegangen_am=heute (Erfassungs-Datum), status=eingegangen (Initial-Status), berufstaetig=true (häufige Voraussetzung)."
+    }
+  }
+}

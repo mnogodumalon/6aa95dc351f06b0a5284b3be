@@ -1,0 +1,41 @@
+{
+  "pages": {
+    "en": {
+      " sind vollständig belegt — keine freien Plätze.": " are fully occupied — no available slots.",
+      " — neue Anfrage eingegangen.": " — new request received.",
+      " — neue Anfragen in der letzten Woche.": " — new requests in the last week.",
+      "Abgelehnt": "Rejected",
+      "Alle Anfragen bearbeitet — gute Arbeit!": "All requests processed — great work!",
+      "Anfrage erfassen": "Record Request",
+      "Auf Warteliste": "On Waitlist",
+      "Eingegangen": "Received",
+      "Einrichtung": "Facility",
+      "Einrichtung öffnen": "Open Facility",
+      "Einrichtungen & Auslastung": "Facilities & Utilization",
+      "Erste Einrichtung anlegen": "Create First Facility",
+      "In Prüfung setzen": "Set to Review",
+      "Kein Kontingent hinterlegt": "No capacity defined",
+      "Keine Anfragen auf der Warteliste.": "No requests on the waitlist.",
+      "Keine neuen Anfragen in der letzten Woche.": "No new requests in the last week.",
+      "Neu eingegangen (7 Tage)": "Newly Received (7 Days)",
+      "Neue Anfrage": "New Request",
+      "Noch keine Einrichtungen angelegt.": "No facilities created yet.",
+      "Offen": "Open",
+      "Prüfen": "Review",
+      "Status auf {0} gesetzt": "Status set to {0}",
+      "Unbekannt": "Unknown",
+      "Unbekannte Einrichtung": "Unknown Facility",
+      "Voll": "Full",
+      "Warteliste": "Waitlist",
+      "Zugesagt": "Committed",
+      "Zusagen": "Commitments",
+      "ist vollständig belegt — keine freien Plätze.": "is fully occupied — no available slots.",
+      "{0} offene Anfrage": "{0} open request",
+      "{0} offene Anfragen": "{0} open requests",
+      "{0} offene Anfragen warten auf Entscheidung.": "{0} open requests awaiting decision.",
+      "{0} von {1} Plätzen": "{0} of {1} slots",
+      "· Platz": "· Slot"
+    }
+  },
+  "v": 1
+}

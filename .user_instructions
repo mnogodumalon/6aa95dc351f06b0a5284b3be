@@ -1,0 +1,25 @@
+Kita-Platzvergabe Stadt Forchheim:
+
+Die Stadt betreibt sechs Kitas und will die Platzvergabe digital abwickeln: Eltern stellen online eine Anfrage, die Einrichtungen entscheiden, der Träger behält den Überblick.
+
+Wer damit arbeitet:
+- Träger (Stadtverwaltung): pflegt Einrichtungen und Platzkontingente, sieht alle Anfragen und Wartelisten aller Kitas
+- Einrichtungsleitung: sieht nur die Anfragen für ihre Kita, sagt zu oder ab, führt die Warteliste
+- Eltern: stellen über ein öffentliches Formular eine Anfrage ohne Konto und bekommen eine Bestätigung per E-Mail
+
+Einrichtungen
+Name, Adresse, Trägerart (städtisch / kirchlich / frei), Öffnungszeiten, Betreuungsformen (Mehrfachauswahl: Krippe unter 3 / Kindergarten 3–6 / Hort), Leitung (Mitarbeiter), Telefon, E-Mail, Beschreibung, Foto.
+
+Platzkontingente
+Einrichtung, Kita-Jahr (z. B. 2026/27), Betreuungsform, Plätze gesamt, Plätze vergeben (ergibt sich aus den Zusagen), Plätze frei (ergibt sich).
+
+Kinder
+Vorname, Nachname, Geburtsdatum, Geschlecht, Wohnadresse, Besonderheiten (Allergien, Förderbedarf), Geschwisterkind bereits in einer Einrichtung (ja/nein).
+
+Anfragen
+Anfragenummer, Kind, Name des Elternteils, E-Mail Elternteil, Telefon Elternteil, Gewünschte Einrichtung, Zweitwunsch Einrichtung, Betreuungsform, Gewünschter Start, Betreuungsumfang (halbtags / ganztags / verlängert), Berufstätigkeit beider Eltern (ja/nein), Eingegangen am, Status (Eingegangen / In Prüfung / Warteliste / Zugesagt / Abgelehnt / Zurückgezogen), Wartelistenplatz, Entscheidung am, Ablehnungsgrund (Pflicht bei Ablehnung), Interne Notizen (nur Einrichtung und Träger). Für Eltern im öffentlichen Formular sind nur Kind, Elterndaten, Einrichtung, Betreuungsform und Start Pflicht, alles Interne ist für sie unsichtbar.
+
+Mitarbeiter
+Vorname, Nachname, Rolle (Träger / Einrichtungsleitung), Einrichtung (nur bei Leitung), E-Mail, Telefon.
+
+Wichtig: Jede Beziehung soll nur in einer Richtung gespeichert werden. Die Anfrage kennt Kind und Einrichtung, das Kontingent kennt seine Einrichtung, der Mitarbeiter kennt seine Einrichtung. Bitte keine Listenfelder in der Gegenrichtung anlegen.
