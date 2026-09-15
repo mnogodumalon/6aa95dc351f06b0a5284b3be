@@ -20,6 +20,7 @@
 import type { ComponentType } from 'react';
 
 // <custom:intent-imports>
+import { IconCheckbox, IconSquarePlus } from '@tabler/icons-react';
 // </custom:intent-imports>
 
 export interface IntentLink {
@@ -42,6 +43,8 @@ export interface IntentLink {
 
 export const INTENTS: IntentLink[] = [
   // <custom:intents>
+  { path: '/intents/anfrage-entscheiden', label: { de: 'Anfrage entscheiden', en: 'Decide application' }, icon: IconCheckbox, description: 'Anfrage bearbeiten: Status setzen, Warteliste oder Ablehnung mit Begründung' },
+  { path: '/intents/kontingent-anlegen', label: { de: 'Kontingent anlegen', en: 'Create quota' }, icon: IconSquarePlus, description: 'Platzkontingent für eine Einrichtung und ein Kita-Jahr anlegen' },
   // </custom:intents>
 ];
 
@@ -52,7 +55,7 @@ export const INTENTS: IntentLink[] = [
  * purpose — a scaffold update resets it to false (self-healing if Phase 2
  * never ran).
  */
-export const INTENTS_PENDING = true;
+export const INTENTS_PENDING = false;
 
 /**
  * When the Phase-1 bundle was deployed (ISO, set by the service together with

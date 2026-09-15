@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "pages": [
+    {
+      "slug": "kita-anfrage",
+      "component": "KitaAnfrage",
+      "title": "Kita-Aufnahmeanfrage stellen",
+      "endpoints": [
+        {
+          "entity": "einrichtungen",
+          "op": "list",
+          "fields": [
+            "name",
+            "ort",
+            "traegerart",
+            "betreuungsformen"
+          ],
+          "scope_description": "Zeigt alle Einrichtungen zur Auswahl",
+          "max_records": 200
+        },
+        {
+          "entity": "kinder",
+          "op": "create",
+          "fields": [
+            "vorname",
+            "nachname",
+            "geburtsdatum",
+            "geschlecht",
+            "strasse",
+            "hausnummer",
+            "plz",
+            "ort",
+            "besonderheiten",
+            "geschwisterkind"
+          ]
+        },
+        {
+          "entity": "anfragen",
+          "op": "create",
+          "fields": [
+            "kind",
+            "eltern_vorname",
+            "eltern_nachname",
+            "eltern_email",
+            "eltern_telefon",
+            "einrichtung",
+            "zweitwunsch_einrichtung",
+            "betreuungsform",
+            "gewuenschter_start",
+            "betreuungsumfang",
+            "berufstaetig"
+          ],
+          "preset_fields": {
+            "status": "eingegangen"
+          }
+        }
+      ]
+    }
+  ]
+}
