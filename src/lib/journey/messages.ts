@@ -37,6 +37,11 @@ export type MessageFieldKey<E extends EntityKey> = E extends keyof MessageFields
 
 export const REQUIRED_MESSAGES: { [E in EntityKey]?: Partial<Record<MessageFieldKey<E>, string>> } = {
   // <custom:messages>
+  einrichtungen: { name: "Bitte den Namen der Einrichtung eingeben.", traegerart: "Bitte die Trägerart auswählen.", strasse: "Bitte die Straße eingeben.", hausnummer: "Bitte die Hausnummer eingeben.", plz: "Bitte die Postleitzahl eingeben.", ort: "Bitte den Ort eingeben.", betreuungsformen: "Bitte mindestens eine Betreuungsform auswählen." },
+  mitarbeiter: { vorname: "Bitte den Vornamen eingeben.", nachname: "Bitte den Nachnamen eingeben.", rolle: "Bitte die Rolle auswählen.", email_ma: "Bitte die E-Mail-Adresse eingeben." },
+  platzkontingente: { einrichtung: "Bitte eine Einrichtung auswählen.", kita_jahr: "Bitte das Kita-Jahr eingeben (z. B. 2026/27).", betreuungsform: "Bitte die Betreuungsform auswählen.", plaetze_gesamt: "Bitte die Gesamtanzahl der Plätze eingeben." },
+  kinder: { vorname: "Bitte den Vornamen des Kindes eingeben.", nachname: "Bitte den Nachnamen des Kindes eingeben.", geburtsdatum: "Bitte das Geburtsdatum des Kindes angeben.", strasse: "Bitte die Straße der Wohnadresse eingeben.", hausnummer: "Bitte die Hausnummer eingeben.", plz: "Bitte die Postleitzahl eingeben.", ort: "Bitte den Wohnort eingeben." },
+  anfragen: { kind: "Bitte ein Kind auswählen oder neu anlegen.", eltern_vorname: "Bitte den Vornamen des Elternteils eingeben.", eltern_nachname: "Bitte den Nachnamen des Elternteils eingeben.", eltern_email: "Bitte die E-Mail-Adresse des Elternteils eingeben.", einrichtung: "Bitte die gewünschte Einrichtung auswählen.", betreuungsform: "Bitte die Betreuungsform auswählen.", gewuenschter_start: "Bitte das gewünschte Startdatum angeben.", betreuungsumfang: "Bitte den Betreuungsumfang auswählen." },
   // </custom:messages>
 };
 
