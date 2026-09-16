@@ -6,7 +6,7 @@
       "type": "custom",
       "entity": "anfragen",
       "title": "Kita-Aufnahmeanfrage stellen",
-      "published": false,
+      "published": true,
       "fields": [
         "kind",
         "eltern_vorname",

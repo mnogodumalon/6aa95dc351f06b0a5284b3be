@@ -183,19 +183,74 @@ export default function AnfrageEntscheidenPage() {
         needs={['_anfrageId']}
       >
         <div className="space-y-5">
-          {/* Gewählte Anfrage als Kontext */}
+          {/* Vollständige Informationsbox über die gewählte Anfrage */}
           {anfrageRecord && (
-            <div className="rounded-xl border bg-secondary/40 px-4 py-3 text-sm text-muted-foreground flex flex-wrap items-center gap-2">
-              <span className="font-medium text-foreground">
-                {`${fieldText(anfrageRecord, 'eltern_vorname')} ${fieldText(anfrageRecord, 'eltern_nachname')}`.trim()}
-              </span>
-              {anfragenummer && <span>· {anfragenummer}</span>}
-              {anfrageRecord && fieldLookup(anfrageRecord, 'status') && (
-                <StatusBadge
-                  statusKey={fieldLookup(anfrageRecord, 'status')?.key}
-                  label={fieldLookup(anfrageRecord, 'status')?.label}
-                />
-              )}
+            <div className="rounded-xl border bg-secondary/40 p-4 text-sm space-y-4">
+              {/* Abschnitt: Kind */}
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground mb-2">{tx('Kind')}</p>
+                <dl className="grid grid-cols-2 gap-x-4 gap-y-1">
+                  <dt className="text-muted-foreground">{tx('Name')}</dt>
+                  <dd className="font-medium text-foreground">{anfragen.refLabel(anfrageRecord, 'kind') ?? tx('—')}</dd>
+                </dl>
+              </div>
+              <div className="border-t" />
+              {/* Abschnitt: Eltern */}
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground mb-2">{tx('Eltern')}</p>
+                <dl className="grid grid-cols-2 gap-x-4 gap-y-1">
+                  <dt className="text-muted-foreground">{tx('Name')}</dt>
+                  <dd className="font-medium text-foreground">
+                    {`${fieldText(anfrageRecord, 'eltern_vorname')} ${fieldText(anfrageRecord, 'eltern_nachname')}`.trim() || tx('—')}
+                  </dd>
+                  <dt className="text-muted-foreground">{tx('E-Mail')}</dt>
+                  <dd className="text-foreground">{fieldText(anfrageRecord, 'eltern_email') || tx('—')}</dd>
+                  {fieldText(anfrageRecord, 'eltern_telefon') && (
+                    <>
+                      <dt className="text-muted-foreground">{tx('Telefon')}</dt>
+                      <dd className="text-foreground">{fieldText(anfrageRecord, 'eltern_telefon')}</dd>
+                    </>
+                  )}
+                </dl>
+              </div>
+              <div className="border-t" />
+              {/* Abschnitt: Anfrage-Details */}
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground mb-2">{tx('Anfrage-Details')}</p>
+                <dl className="grid grid-cols-2 gap-x-4 gap-y-1">
+                  <dt className="text-muted-foreground">{tx('Gewünschte Einrichtung')}</dt>
+                  <dd className="font-medium text-foreground">{anfragen.refLabel(anfrageRecord, 'einrichtung') ?? tx('—')}</dd>
+                  {anfragen.refLabel(anfrageRecord, 'zweitwunsch_einrichtung') && (
+                    <>
+                      <dt className="text-muted-foreground">{tx('Zweitwunsch')}</dt>
+                      <dd className="text-foreground">{anfragen.refLabel(anfrageRecord, 'zweitwunsch_einrichtung')}</dd>
+                    </>
+                  )}
+                  <dt className="text-muted-foreground">{tx('Betreuungsform')}</dt>
+                  <dd className="text-foreground">{fieldLookup(anfrageRecord, 'betreuungsform')?.label ?? tx('—')}</dd>
+                  <dt className="text-muted-foreground">{tx('Betreuungsumfang')}</dt>
+                  <dd className="text-foreground">{fieldLookup(anfrageRecord, 'betreuungsumfang')?.label ?? tx('—')}</dd>
+                  <dt className="text-muted-foreground">{tx('Gewünschter Start')}</dt>
+                  <dd className="text-foreground">{fieldDate(anfrageRecord, 'gewuenschter_start') ? formatDate(fieldDate(anfrageRecord, 'gewuenschter_start')!) : tx('—')}</dd>
+                  <dt className="text-muted-foreground">{tx('Berufstätig')}</dt>
+                  <dd className="text-foreground">{anfrageRecord.fields.berufstaetig ? tx('Ja') : tx('Nein')}</dd>
+                  <dt className="text-muted-foreground">{tx('Bisheriger Status')}</dt>
+                  <dd className="text-foreground">
+                    <StatusBadge
+                      statusKey={fieldLookup(anfrageRecord, 'status')?.key}
+                      label={fieldLookup(anfrageRecord, 'status')?.label}
+                    />
+                  </dd>
+                  <dt className="text-muted-foreground">{tx('Eingegangen am')}</dt>
+                  <dd className="text-foreground">{fieldDate(anfrageRecord, 'eingegangen_am') ? formatDate(fieldDate(anfrageRecord, 'eingegangen_am')!) : tx('—')}</dd>
+                  {fieldText(anfrageRecord, 'interne_notizen') && (
+                    <>
+                      <dt className="text-muted-foreground">{tx('Interne Notizen')}</dt>
+                      <dd className="text-foreground whitespace-pre-line col-span-2 mt-1 border-t pt-2">{fieldText(anfrageRecord, 'interne_notizen')}</dd>
+                    </>
+                  )}
+                </dl>
+              </div>
             </div>
           )}
 

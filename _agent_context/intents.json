@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "flows": [],
+  "unregistered_pages": [
+    {
+      "file": "src/pages/intents/AnfrageEntscheidenPage.tsx",
+      "summary": "/**\n * Anfrage entscheiden — 4-Schritt-Wizard.\n * Steps: 1) Anfrage wählen (nur 'eingegangen' | 'in_pruefung') →\n *         2) Entscheidung (status: zugesagt|warteliste|abgelehnt, wartelistenplatz, ablehnungsgrund, entscheidung_am) →\n *         3) Prüfen & bestätigen →\n *         4) Fertig.\n * Reads: anfragen (gefiltert nach status).\n * Writes: anfragen (UPDATE der gewählten Anfrage, updateAnfragenEntry).\n * Composes: IntentWizardShell, WizardStep, EntitySelectStep, ChoiceGroup, Field, Bound,\n *           StepNav, SummaryStep, SuccessStep.\n */",
+      "components": [
+        "Bound",
+        "ChoiceGroup",
+        "EntitySelectStep",
+        "Field",
+        "IntentWizardShell",
+        "StatusBadge",
+        "StepNav",
+        "SuccessStep",
+        "SummaryStep",
+        "WizardStep"
+      ],
+      "writes": []
+    },
+    {
+      "file": "src/pages/intents/KontingentAnlegenPage.tsx",
+      "summary": "/**\n * Kontingent anlegen — 3-Schritt-Wizard.\n * Steps: 1) Einrichtung wählen → 2) Kontingentdaten erfassen → 3) Prüfen & anlegen.\n * Reads: einrichtungen. Writes: platzkontingente (createPlatzkontingenteEntry).\n * Composes: IntentWizardShell, WizardStep, EntitySelectStep, Bound, StepNav, SummaryStep, SuccessStep.\n */",
+      "components": [
+        "Bound",
+        "EntitySelectStep",
+        "IntentWizardShell",
+        "StepNav",
+        "SuccessStep",
+        "SummaryStep",
+        "WizardStep"
+      ],
+      "writes": []
+    }
+  ]
+}
