@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "pages": [
+    {
+      "slug": "kita-anfrage",
+      "type": "custom",
+      "entity": "anfragen",
+      "title": "Kita-Aufnahmeanfrage stellen",
+      "published": false,
+      "fields": [
+        "kind",
+        "eltern_vorname",
+        "eltern_nachname",
+        "eltern_email",
+        "eltern_telefon",
+        "einrichtung",
+        "zweitwunsch_einrichtung",
+        "betreuungsform",
+        "gewuenschter_start",
+        "betreuungsumfang",
+        "berufstaetig"
+      ]
+    }
+  ]
+}

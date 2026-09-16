@@ -1,0 +1,29 @@
+{
+  "pages": {
+    "en": {
+      " warten seit mehr als 14 Tagen auf eine Entscheidung.": " have been waiting more than 14 days for a decision.",
+      " wartet seit mehr als 14 Tagen auf eine Entscheidung.": " has been waiting more than 14 days for a decision.",
+      "Alle Anfragen": "All Requests",
+      "Anfrage": "Request",
+      "Anfrage erfassen": "Record Request",
+      "Anfragen": "Requests",
+      "Anfragen nach Einrichtung": "Requests by Facility",
+      "Eingegangen": "Received",
+      "Filter zurücksetzen": "Reset Filter",
+      "In Prüfung": "Under Review",
+      "In Prüfung setzen": "Set to Under Review",
+      "Keine neuen Anfragen — alles in Bearbeitung.": "No new requests — everything is being processed.",
+      "Neue Anfrage": "New Request",
+      "Neue Anfragen": "New Requests",
+      "Noch keine Anfragen — richte Einrichtungen ein und teile das öffentliche Formular.": "No requests yet — set up facilities and share the public form.",
+      "Offen": "Open",
+      "Warteliste": "Waitlist",
+      "Zugesagt": "Accepted",
+      "{0} (vorher: {1})": "{0} (previously: {1})",
+      "{0} neue {1} eingegangen — {2} aktiv.": "{0} new {1} received — {2} active.",
+      "{0} wartet auf Entscheidung — bitte prüfen.": "{0} waiting for decision — please review.",
+      "{0} {1} insgesamt — {2} zugesagt.": "{0} {1} total — {2} accepted."
+    }
+  },
+  "v": 1
+}

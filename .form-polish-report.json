@@ -1,0 +1,34 @@
+{
+  "entities": {
+    "Einrichtungen": {
+      "placeholders_set": 11,
+      "defaults_keys": ["traegerart"],
+      "computed_keys": [],
+      "reason": "Reine Stammdaten-Entity für Kita-Einrichtungen (Name, Adresse, Kontakt, Öffnungszeiten). Keine Number-Felder berechenbar. Lookup-Felder traegerart und betreuungsformen sind Klassifizierungen ohne applookup-Ketten. Keine Berechnungen sinnvoll."
+    },
+    "Mitarbeiter": {
+      "placeholders_set": 6,
+      "defaults_keys": ["rolle"],
+      "computed_keys": [],
+      "reason": "Stammdaten für Mitarbeiter (Name, Rolle, Einrichtung-Zuordnung, Kontakt). Keine Number-Felder, keine applookups mit Preis-Targets. Rolle ist ein Radio-Lookup, dessen erstes Element (Träger) als Standard gesetzt ist."
+    },
+    "Platzkontingente": {
+      "placeholders_set": 4,
+      "defaults_keys": ["betreuungsform"],
+      "computed_keys": [],
+      "reason": "Konfigurationsdaten für Platzkapazitäten pro Einrichtung, Kita-Jahr und Betreuungsform. plaetze_gesamt ist eine reine Kapazitäts-Zahl ohne Berechnung (kein applookup-Ziel mit Preis). Betreuungsform mit Radio-Lookup defaulted auf kindergarten."
+    },
+    "Kinder": {
+      "placeholders_set": 10,
+      "defaults_keys": ["geschwisterkind"],
+      "computed_keys": [],
+      "reason": "Stammdaten für Kinder (Name, Geburtsdatum, Adresse, Besonderheiten, Geschwister-Bool). Keine Number-Felder berechenbar. Adressen-Felder als row-pairs formatiert. Geschwisterkind defaultet auf false."
+    },
+    "Anfragen": {
+      "placeholders_set": 17,
+      "defaults_keys": ["status", "eingegangen_am", "berufstaetig"],
+      "computed_keys": [],
+      "reason": "Zentrale Workflow-Entity für Platzvergabe-Anfragen. Applookups auf Kind und Einrichtungen sind Zuordnungen ohne Preis-Targets. wartelistenplatz ist ein Ordinal-Feld ohne Berechnung. Status-Lookup mit 6 Werten (eingegangen als Default), eingegangen_am=today, berufstaetig=false. Keine Geldbeträge, kein computed nötig."
+    }
+  }
+}
