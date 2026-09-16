@@ -340,6 +340,7 @@ export const UI_CATALOG: Record<CoreLocale, Record<string, string>> = {
     "ppa_can_submit": "Einträge absenden",
     "ppa_can_view": "diese Daten sehen",
     "ppa_cannot_line": "bestehende Daten sehen oder ändern.",
+    "ppa_cannot_change_line": "bestehende Daten ändern oder löschen.",
     "ppa_cancel": "Abbrechen",
     "ppa_confirm_publish": "Veröffentlichen",
     "ps_preview_banner": "Vorschau — nur du siehst diese Seite. Absenden legt einen echten Eintrag an.",
@@ -399,6 +400,9 @@ export const UI_CATALOG: Record<CoreLocale, Record<string, string>> = {
     "pj_failed": "Nicht gebaut",
     "pj_busy": "Für dieses Dashboard läuft gerade ein anderer Bau (seit {minutes} min). Bitte kurz warten und erneut versuchen.",
     "pj_error_network": "Verbindung abgebrochen. Der Bau läuft möglicherweise weiter — das Dashboard meldet sich, wenn die Seite da ist.",
+    "pj_toast_started": "Wird im Hintergrund gebaut, das dauert zwei bis vier Minuten. Du kannst weiterarbeiten — das Dashboard meldet sich, wenn es fertig ist.",
+    "pj_toast_error_hint_flow": "Unter „Abläufe verwalten“ kannst du es erneut versuchen.",
+    "pj_toast_error_hint_public": "Unter „Seiten verwalten“ kannst du es erneut versuchen.",
     "load_error_title": "Fehler beim Laden",
     "retry": "Erneut versuchen",
     "data_load_failed": "Fehler beim Laden der Daten",
@@ -905,6 +909,7 @@ export const UI_CATALOG: Record<CoreLocale, Record<string, string>> = {
     "ppa_can_submit": "submit entries",
     "ppa_can_view": "see this data",
     "ppa_cannot_line": "see or change existing data.",
+    "ppa_cannot_change_line": "change or delete existing data.",
     "ppa_cancel": "Cancel",
     "ppa_confirm_publish": "Publish",
     "ps_preview_banner": "Preview — only you can see this page. Submitting creates a real record.",
@@ -964,6 +969,9 @@ export const UI_CATALOG: Record<CoreLocale, Record<string, string>> = {
     "pj_failed": "Not built",
     "pj_busy": "Another build is running for this dashboard (for {minutes} min). Please wait a moment and try again.",
     "pj_error_network": "Connection lost. The build may still be running — the dashboard tells you when the page is there.",
+    "pj_toast_started": "Building in the background, this takes two to four minutes. Keep working — the dashboard tells you when it is done.",
+    "pj_toast_error_hint_flow": "You can try again under “Manage flows”.",
+    "pj_toast_error_hint_public": "You can try again under “Manage pages”.",
     "load_error_title": "Error Loading",
     "retry": "Try Again",
     "data_load_failed": "Failed to load data",
@@ -1345,7 +1353,7 @@ export const LABELS: Record<CoreLocale, LabelBundle> = {
     }
   },
   "en": {
-    "appgroup": "Kita Slot Assignment Forchheim",
+    "appgroup": "Kita Placement Forchheim",
     "apps": {
       "einrichtungen": {
         "name": "Facilities",
@@ -1360,13 +1368,13 @@ export const LABELS: Record<CoreLocale, LabelBundle> = {
           "plz": "Postal Code",
           "ort": "City",
           "telefon": "Phone",
-          "email": "Email",
+          "email": "E-Mail",
           "betreuungsformen": "Care Types",
           "oeffnungszeiten": "Opening Hours"
         },
         "lookups": {
           "traegerart": {
-            "kirchlich": "Church-Run",
+            "kirchlich": "Church-run",
             "frei": "Independent",
             "staedtisch": "Municipal"
           },
@@ -1385,7 +1393,7 @@ export const LABELS: Record<CoreLocale, LabelBundle> = {
           "nachname": "Last Name",
           "rolle": "Role",
           "einrichtung": "Facility",
-          "email_ma": "Email",
+          "email_ma": "E-Mail",
           "telefon_ma": "Phone"
         },
         "lookups": {
@@ -1396,13 +1404,13 @@ export const LABELS: Record<CoreLocale, LabelBundle> = {
         }
       },
       "platzkontingente": {
-        "name": "Slot Contingents",
+        "name": "Place Quotas",
         "app_id": "6aa95d9ea2bf16980067e647",
         "fields": {
           "einrichtung": "Facility",
           "kita_jahr": "Kita Year",
           "betreuungsform": "Care Type",
-          "plaetze_gesamt": "Total Slots"
+          "plaetze_gesamt": "Total Places"
         },
         "lookups": {
           "betreuungsform": {
@@ -1425,7 +1433,7 @@ export const LABELS: Record<CoreLocale, LabelBundle> = {
           "plz": "Postal Code",
           "ort": "City",
           "besonderheiten": "Special Needs (Allergies, Support Requirements)",
-          "geschwisterkind": "Sibling Already Enrolled in a Facility"
+          "geschwisterkind": "Sibling Already Enrolled at a Facility"
         },
         "lookups": {
           "geschlecht": {
@@ -1440,10 +1448,10 @@ export const LABELS: Record<CoreLocale, LabelBundle> = {
         "app_id": "6aa95da03d9608636c3c2843",
         "fields": {
           "kind": "Child",
-          "eltern_vorname": "Parent's First Name",
-          "eltern_nachname": "Parent's Last Name",
-          "eltern_email": "Parent's Email",
-          "eltern_telefon": "Parent's Phone",
+          "eltern_vorname": "Parent First Name",
+          "eltern_nachname": "Parent Last Name",
+          "eltern_email": "Parent E-Mail",
+          "eltern_telefon": "Parent Phone",
           "einrichtung": "Preferred Facility",
           "zweitwunsch_einrichtung": "Second-Choice Facility",
           "betreuungsform": "Care Type",
@@ -1453,8 +1461,8 @@ export const LABELS: Record<CoreLocale, LabelBundle> = {
           "anfragenummer": "Request Number",
           "eingegangen_am": "Received On",
           "status": "Status",
-          "wartelistenplatz": "Waitlist Position",
-          "entscheidung_am": "Decision On",
+          "wartelistenplatz": "Waiting List Position",
+          "entscheidung_am": "Decision Date",
           "ablehnungsgrund": "Rejection Reason",
           "interne_notizen": "Internal Notes"
         },
@@ -1472,8 +1480,8 @@ export const LABELS: Record<CoreLocale, LabelBundle> = {
           "status": {
             "eingegangen": "Received",
             "in_pruefung": "Under Review",
-            "warteliste": "Waitlist",
-            "zugesagt": "Confirmed",
+            "warteliste": "Waiting List",
+            "zugesagt": "Accepted",
             "abgelehnt": "Rejected",
             "zurueckgezogen": "Withdrawn"
           }

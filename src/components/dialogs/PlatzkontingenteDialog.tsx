@@ -347,7 +347,7 @@ export function PlatzkontingenteDialog({ open, onClose, onSubmit, defaultValues,
         <Label htmlFor="einrichtung">{fieldLabel('platzkontingente', 'einrichtung')} <span className="text-destructive" aria-hidden="true">*</span></Label>
         <Combobox
           id="einrichtung"
-          placeholder="Welche Einrichtung"
+          placeholder=""
           items={einrichtungenListAll.map(r => ({
             id: r.record_id,
             label: String(r.fields.name ?? r.record_id),
@@ -367,7 +367,7 @@ export function PlatzkontingenteDialog({ open, onClose, onSubmit, defaultValues,
         <Label htmlFor="kita_jahr">{fieldLabel('platzkontingente', 'kita_jahr')} <span className="text-destructive" aria-hidden="true">*</span></Label>
         <Input
           id="kita_jahr"
-          placeholder="z. B. 2025/2026"
+          placeholder=""
           value={fields.kita_jahr ?? ''}
           onChange={e => setFields(f => ({ ...f, kita_jahr: e.target.value }))}
           required
@@ -435,7 +435,7 @@ export function PlatzkontingenteDialog({ open, onClose, onSubmit, defaultValues,
           inputMode="decimal"
           step="any"
           {...numberInputProps(formEnhancements, 'plaetze_gesamt')}
-          placeholder="z. B. 25"
+          placeholder=""
           value={fields.plaetze_gesamt !== undefined ? fields.plaetze_gesamt : (computedValues['plaetze_gesamt'] ?? '')}
           onChange={e => setFields(f => ({ ...f, plaetze_gesamt: clampNumberValue(formEnhancements, 'plaetze_gesamt', e.target.value) }))}
         />

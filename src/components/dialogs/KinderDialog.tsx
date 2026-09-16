@@ -310,7 +310,7 @@ export function KinderDialog({ open, onClose, onSubmit, defaultValues, recordId,
         <Label htmlFor="vorname">{fieldLabel('kinder', 'vorname')} <span className="text-destructive" aria-hidden="true">*</span></Label>
         <Input
           id="vorname"
-          placeholder="z. B. Lena"
+          placeholder=""
           value={fields.vorname ?? ''}
           onChange={e => setFields(f => ({ ...f, vorname: e.target.value }))}
           required
@@ -325,7 +325,7 @@ export function KinderDialog({ open, onClose, onSubmit, defaultValues, recordId,
         <Label htmlFor="nachname">{fieldLabel('kinder', 'nachname')} <span className="text-destructive" aria-hidden="true">*</span></Label>
         <Input
           id="nachname"
-          placeholder="z. B. Schmidt"
+          placeholder=""
           value={fields.nachname ?? ''}
           onChange={e => setFields(f => ({ ...f, nachname: e.target.value }))}
           required
@@ -340,7 +340,7 @@ export function KinderDialog({ open, onClose, onSubmit, defaultValues, recordId,
         <Label htmlFor="geburtsdatum">{fieldLabel('kinder', 'geburtsdatum')} <span className="text-destructive" aria-hidden="true">*</span></Label>
         <DatePicker
           id="geburtsdatum"
-          placeholder="Geburtsdatum eingeben"
+          placeholder=""
           mode="date"
           value={fields.geburtsdatum ?? null}
           onChange={v => setFields(f => ({ ...f, geburtsdatum: v ?? undefined }))}
@@ -402,7 +402,7 @@ export function KinderDialog({ open, onClose, onSubmit, defaultValues, recordId,
         <Label htmlFor="strasse">{fieldLabel('kinder', 'strasse')} <span className="text-destructive" aria-hidden="true">*</span></Label>
         <Input
           id="strasse"
-          placeholder="z. B. Schulstraße"
+          placeholder=""
           value={fields.strasse ?? ''}
           onChange={e => setFields(f => ({ ...f, strasse: e.target.value }))}
           required
@@ -417,7 +417,7 @@ export function KinderDialog({ open, onClose, onSubmit, defaultValues, recordId,
         <Label htmlFor="hausnummer">{fieldLabel('kinder', 'hausnummer')} <span className="text-destructive" aria-hidden="true">*</span></Label>
         <Input
           id="hausnummer"
-          placeholder="z. B. 5"
+          placeholder=""
           value={fields.hausnummer ?? ''}
           onChange={e => setFields(f => ({ ...f, hausnummer: e.target.value }))}
           required
@@ -432,7 +432,7 @@ export function KinderDialog({ open, onClose, onSubmit, defaultValues, recordId,
         <Label htmlFor="plz">{fieldLabel('kinder', 'plz')} <span className="text-destructive" aria-hidden="true">*</span></Label>
         <Input
           id="plz"
-          placeholder="z. B. 91301"
+          placeholder=""
           value={fields.plz ?? ''}
           onChange={e => setFields(f => ({ ...f, plz: e.target.value }))}
           required
@@ -447,7 +447,7 @@ export function KinderDialog({ open, onClose, onSubmit, defaultValues, recordId,
         <Label htmlFor="ort">{fieldLabel('kinder', 'ort')} <span className="text-destructive" aria-hidden="true">*</span></Label>
         <Input
           id="ort"
-          placeholder="z. B. Forchheim"
+          placeholder=""
           value={fields.ort ?? ''}
           onChange={e => setFields(f => ({ ...f, ort: e.target.value }))}
           required
@@ -462,7 +462,7 @@ export function KinderDialog({ open, onClose, onSubmit, defaultValues, recordId,
         <Label htmlFor="besonderheiten">{fieldLabel('kinder', 'besonderheiten')}</Label>
         <Textarea
           id="besonderheiten"
-          placeholder="Allergien, Behinderungen, Förderbedarfe, Verhaltensbesonderheiten..."
+          placeholder=""
           value={fields.besonderheiten ?? ''}
           onChange={e => setFields(f => ({ ...f, besonderheiten: e.target.value }))}
           rows={3}

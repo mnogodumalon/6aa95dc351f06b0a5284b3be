@@ -69,11 +69,11 @@ createRecordUrl from the service. Note the lowercase `l` in the service path.
   ✚ EnrichedPlatzkontingente adds ONLY einrichtungName — via enrichPlatzkontingente(platzkontingente, { einrichtungenMap }), all maps required
   → einrichtung links to app_id 6aa95d9522cd16bf318fc896
 - Kinder (kinder): vorname!^[string/text], nachname!^[string/text], geburtsdatum!^[date/date], geschlecht^[lookup/radio: weiblich|maennlich|divers], strasse!^[string/text], hausnummer![string/text], plz![string/text] "Postleitzahl", ort![string/text], besonderheiten[string/textarea] "Besonderheiten (Allergien, Förderbedarf)", geschwisterkind[bool] "Geschwisterkind bereits in einer Einrichtung"
-  ≡ 4 records at build time
+  ≡ 5 records at build time
   ◈ geschlecht → choice (3 options, ChoiceGroup)
   ⚙ getKinder() · getKinderEntry(id) · createKinderEntry(fields) · updateKinderEntry(id, fields) · deleteKinderEntry(id) · queryKinder({ filter, orderby, limit, offset, fields }) · countKinder(filter?)
 - Anfragen (anfragen): kind!^[applookup/select], eltern_vorname!^[string/text] "Vorname des Elternteils", eltern_nachname!^[string/text] "Nachname des Elternteils", eltern_email!^[string/email] "E-Mail des Elternteils", eltern_telefon^[string/tel] "Telefon des Elternteils", einrichtung![applookup/select] "Gewünschte Einrichtung", zweitwunsch_einrichtung[applookup/select], betreuungsform![lookup/radio: krippe=Krippe (unter 3 Jahre)|kindergarten=Kindergarten (3–6 Jahre)|hort], gewuenschter_start![date/date] "Gewünschter Betreuungsstart", betreuungsumfang![lookup/radio: halbtags|ganztags|verlaengert], berufstaetig[bool] "Beide Elternteile berufstätig", anfragenummer[string/text], eingegangen_am[date/date], status[lookup/select: eingegangen|in_pruefung|warteliste|zugesagt|abgelehnt|zurueckgezogen], wartelistenplatz[number], entscheidung_am[date/date], ablehnungsgrund[string/textarea], interne_notizen[string/textarea]
-  ≡ 4 records at build time
+  ≡ 5 records at build time
   ◈ betreuungsform → choice (3 options, ChoiceGroup) · betreuungsumfang → choice (3 options, ChoiceGroup) · status → choice (6 options, ChoiceGroup) · kind → record (kinder, EntitySelectStep) · einrichtung → record (einrichtungen, EntitySelectStep) · zweitwunsch_einrichtung → record (einrichtungen, EntitySelectStep)
   ⚙ getAnfragen() · getAnfragenEntry(id) · createAnfragenEntry(fields) · updateAnfragenEntry(id, fields) · deleteAnfragenEntry(id) · queryAnfragen({ filter, orderby, limit, offset, fields }) · countAnfragen(filter?)
   ✚ EnrichedAnfragen adds ONLY kindName, einrichtungName, zweitwunsch_einrichtungName — via enrichAnfragen(anfragen, { kinderMap, einrichtungenMap }), all maps required

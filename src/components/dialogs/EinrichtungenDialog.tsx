@@ -321,7 +321,7 @@ export function EinrichtungenDialog({ open, onClose, onSubmit, defaultValues, re
         <Label htmlFor="name">{fieldLabel('einrichtungen', 'name')} <span className="text-destructive" aria-hidden="true">*</span></Label>
         <Input
           id="name"
-          placeholder="z. B. Kindergarten Sonnenschein"
+          placeholder=""
           value={fields.name ?? ''}
           onChange={e => setFields(f => ({ ...f, name: e.target.value }))}
           required
@@ -385,7 +385,7 @@ export function EinrichtungenDialog({ open, onClose, onSubmit, defaultValues, re
         <Label htmlFor="beschreibung">{fieldLabel('einrichtungen', 'beschreibung')}</Label>
         <Textarea
           id="beschreibung"
-          placeholder="Schwerpunkte, Konzept, Besonderheiten..."
+          placeholder=""
           value={fields.beschreibung ?? ''}
           onChange={e => setFields(f => ({ ...f, beschreibung: e.target.value }))}
           rows={3}
@@ -467,7 +467,7 @@ export function EinrichtungenDialog({ open, onClose, onSubmit, defaultValues, re
         <Label htmlFor="strasse">{fieldLabel('einrichtungen', 'strasse')} <span className="text-destructive" aria-hidden="true">*</span></Label>
         <Input
           id="strasse"
-          placeholder="z. B. Hauptstraße"
+          placeholder=""
           value={fields.strasse ?? ''}
           onChange={e => setFields(f => ({ ...f, strasse: e.target.value }))}
           required
@@ -482,7 +482,7 @@ export function EinrichtungenDialog({ open, onClose, onSubmit, defaultValues, re
         <Label htmlFor="hausnummer">{fieldLabel('einrichtungen', 'hausnummer')} <span className="text-destructive" aria-hidden="true">*</span></Label>
         <Input
           id="hausnummer"
-          placeholder="z. B. 42"
+          placeholder=""
           value={fields.hausnummer ?? ''}
           onChange={e => setFields(f => ({ ...f, hausnummer: e.target.value }))}
           required
@@ -497,7 +497,7 @@ export function EinrichtungenDialog({ open, onClose, onSubmit, defaultValues, re
         <Label htmlFor="plz">{fieldLabel('einrichtungen', 'plz')} <span className="text-destructive" aria-hidden="true">*</span></Label>
         <Input
           id="plz"
-          placeholder="z. B. 91301"
+          placeholder=""
           value={fields.plz ?? ''}
           onChange={e => setFields(f => ({ ...f, plz: e.target.value }))}
           required
@@ -512,7 +512,7 @@ export function EinrichtungenDialog({ open, onClose, onSubmit, defaultValues, re
         <Label htmlFor="ort">{fieldLabel('einrichtungen', 'ort')} <span className="text-destructive" aria-hidden="true">*</span></Label>
         <Input
           id="ort"
-          placeholder="z. B. Forchheim"
+          placeholder=""
           value={fields.ort ?? ''}
           onChange={e => setFields(f => ({ ...f, ort: e.target.value }))}
           required
@@ -529,7 +529,7 @@ export function EinrichtungenDialog({ open, onClose, onSubmit, defaultValues, re
           id="telefon"
           type="tel"
           inputMode="tel"
-          placeholder="z. B. 09191 1234567"
+          placeholder=""
           value={fields.telefon ?? ''}
           onChange={e => setFields(f => ({ ...f, telefon: e.target.value }))}
         />
@@ -542,7 +542,7 @@ export function EinrichtungenDialog({ open, onClose, onSubmit, defaultValues, re
           id="email"
           type="email"
           inputMode="email"
-          placeholder="z. B. info@kita-example.de"
+          placeholder=""
           value={fields.email ?? ''}
           onChange={e => setFields(f => ({ ...f, email: e.target.value }))}
         />
@@ -605,7 +605,7 @@ export function EinrichtungenDialog({ open, onClose, onSubmit, defaultValues, re
         <Label htmlFor="oeffnungszeiten">{fieldLabel('einrichtungen', 'oeffnungszeiten')}</Label>
         <Textarea
           id="oeffnungszeiten"
-          placeholder="Eine Zeile pro Betriebsart, z. B. Mo–Fr 7:30–17:00"
+          placeholder=""
           value={fields.oeffnungszeiten ?? ''}
           onChange={e => setFields(f => ({ ...f, oeffnungszeiten: e.target.value }))}
           rows={3}

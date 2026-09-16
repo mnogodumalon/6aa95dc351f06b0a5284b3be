@@ -43,8 +43,8 @@ export interface IntentLink {
 
 export const INTENTS: IntentLink[] = [
   // <custom:intents>
-  { path: '/intents/anfrage-entscheiden', label: { de: 'Anfrage entscheiden', en: 'Decide request' }, icon: IconChecklist, description: 'Anfrage prüfen und Zusage, Warteliste oder Ablehnung erfassen' },
-  { path: '/intents/kontingent-anlegen', label: { de: 'Kontingent anlegen', en: 'Create quota' }, icon: IconStack2, description: 'Platzkontingent für eine Einrichtung und ein Kita-Jahr anlegen' },
+  { path: '/intents/anfrage-entscheiden', label: { de: 'Anfrage entscheiden', en: 'Decide request' }, icon: IconChecklist, description: { de: 'Anfrage prüfen und Zusage, Warteliste oder Ablehnung erfassen', en: 'Review request and record acceptance, waitlist, or rejection' } },
+  { path: '/intents/kontingent-anlegen', label: { de: 'Kontingent anlegen', en: 'Create quota' }, icon: IconStack2, description: { de: 'Platzkontingent für eine Einrichtung und ein Kita-Jahr anlegen', en: 'Create place quota for a facility and a daycare year' } },
   // </custom:intents>
 ];
 
@@ -64,5 +64,5 @@ export const INTENTS_PENDING = false;
  * pulsing "werden erstellt …" in every deployed Phase-1 bundle forever — no
  * code path redeploys Phase 1 without the flag (live 03.09.2026).
  */
-export const INTENTS_PENDING_SINCE: string | null = '2026-09-16T08:46:40+00:00';
+export const INTENTS_PENDING_SINCE: string | null = null;
 export const PENDING_MAX_MINUTES = 30;

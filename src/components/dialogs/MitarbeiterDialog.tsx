@@ -347,7 +347,7 @@ export function MitarbeiterDialog({ open, onClose, onSubmit, defaultValues, reco
         <Label htmlFor="vorname">{fieldLabel('mitarbeiter', 'vorname')} <span className="text-destructive" aria-hidden="true">*</span></Label>
         <Input
           id="vorname"
-          placeholder="z. B. Anna"
+          placeholder=""
           value={fields.vorname ?? ''}
           onChange={e => setFields(f => ({ ...f, vorname: e.target.value }))}
           required
@@ -362,7 +362,7 @@ export function MitarbeiterDialog({ open, onClose, onSubmit, defaultValues, reco
         <Label htmlFor="nachname">{fieldLabel('mitarbeiter', 'nachname')} <span className="text-destructive" aria-hidden="true">*</span></Label>
         <Input
           id="nachname"
-          placeholder="z. B. Müller"
+          placeholder=""
           value={fields.nachname ?? ''}
           onChange={e => setFields(f => ({ ...f, nachname: e.target.value }))}
           required
@@ -413,7 +413,7 @@ export function MitarbeiterDialog({ open, onClose, onSubmit, defaultValues, reco
         <Label htmlFor="einrichtung">{fieldLabel('mitarbeiter', 'einrichtung')}</Label>
         <Combobox
           id="einrichtung"
-          placeholder="Welche Einrichtung zuordnen"
+          placeholder=""
           items={einrichtungenListAll.map(r => ({
             id: r.record_id,
             label: String(r.fields.name ?? r.record_id),
@@ -432,7 +432,7 @@ export function MitarbeiterDialog({ open, onClose, onSubmit, defaultValues, reco
           id="email_ma"
           type="email"
           inputMode="email"
-          placeholder="z. B. anna.mueller@example.de"
+          placeholder=""
           value={fields.email_ma ?? ''}
           onChange={e => setFields(f => ({ ...f, email_ma: e.target.value }))}
           required
@@ -449,7 +449,7 @@ export function MitarbeiterDialog({ open, onClose, onSubmit, defaultValues, reco
           id="telefon_ma"
           type="tel"
           inputMode="tel"
-          placeholder="z. B. 09191 9999999"
+          placeholder=""
           value={fields.telefon_ma ?? ''}
           onChange={e => setFields(f => ({ ...f, telefon_ma: e.target.value }))}
         />

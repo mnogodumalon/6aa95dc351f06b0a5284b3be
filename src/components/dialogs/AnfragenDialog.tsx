@@ -392,7 +392,7 @@ export function AnfragenDialog({ open, onClose, onSubmit, defaultValues, recordI
         <Label htmlFor="kind">{fieldLabel('anfragen', 'kind')} <span className="text-destructive" aria-hidden="true">*</span></Label>
         <Combobox
           id="kind"
-          placeholder="Welches Kind anfragen"
+          placeholder=""
           items={kinderListAll.map(r => ({
             id: r.record_id,
             label: String(r.fields.vorname ?? r.record_id),
@@ -412,7 +412,7 @@ export function AnfragenDialog({ open, onClose, onSubmit, defaultValues, recordI
         <Label htmlFor="eltern_vorname">{fieldLabel('anfragen', 'eltern_vorname')} <span className="text-destructive" aria-hidden="true">*</span></Label>
         <Input
           id="eltern_vorname"
-          placeholder="z. B. Thomas"
+          placeholder=""
           value={fields.eltern_vorname ?? ''}
           onChange={e => setFields(f => ({ ...f, eltern_vorname: e.target.value }))}
           required
@@ -427,7 +427,7 @@ export function AnfragenDialog({ open, onClose, onSubmit, defaultValues, recordI
         <Label htmlFor="eltern_nachname">{fieldLabel('anfragen', 'eltern_nachname')} <span className="text-destructive" aria-hidden="true">*</span></Label>
         <Input
           id="eltern_nachname"
-          placeholder="z. B. Meier"
+          placeholder=""
           value={fields.eltern_nachname ?? ''}
           onChange={e => setFields(f => ({ ...f, eltern_nachname: e.target.value }))}
           required
@@ -444,7 +444,7 @@ export function AnfragenDialog({ open, onClose, onSubmit, defaultValues, recordI
           id="eltern_email"
           type="email"
           inputMode="email"
-          placeholder="z. B. family@example.de"
+          placeholder=""
           value={fields.eltern_email ?? ''}
           onChange={e => setFields(f => ({ ...f, eltern_email: e.target.value }))}
           required
@@ -461,7 +461,7 @@ export function AnfragenDialog({ open, onClose, onSubmit, defaultValues, recordI
           id="eltern_telefon"
           type="tel"
           inputMode="tel"
-          placeholder="z. B. 0151 12345678"
+          placeholder=""
           value={fields.eltern_telefon ?? ''}
           onChange={e => setFields(f => ({ ...f, eltern_telefon: e.target.value }))}
         />
@@ -472,7 +472,7 @@ export function AnfragenDialog({ open, onClose, onSubmit, defaultValues, recordI
         <Label htmlFor="einrichtung">{fieldLabel('anfragen', 'einrichtung')} <span className="text-destructive" aria-hidden="true">*</span></Label>
         <Combobox
           id="einrichtung"
-          placeholder="Welche Einrichtung ist Erstwunsch"
+          placeholder=""
           items={einrichtungenListAll.map(r => ({
             id: r.record_id,
             label: String(r.fields.name ?? r.record_id),
@@ -492,7 +492,7 @@ export function AnfragenDialog({ open, onClose, onSubmit, defaultValues, recordI
         <Label htmlFor="zweitwunsch_einrichtung">{fieldLabel('anfragen', 'zweitwunsch_einrichtung')}</Label>
         <Combobox
           id="zweitwunsch_einrichtung"
-          placeholder="Ausweichwunsch (optional)"
+          placeholder=""
           items={einrichtungenListAll.map(r => ({
             id: r.record_id,
             label: String(r.fields.name ?? r.record_id),
@@ -558,7 +558,7 @@ export function AnfragenDialog({ open, onClose, onSubmit, defaultValues, recordI
         <Label htmlFor="gewuenschter_start">{fieldLabel('anfragen', 'gewuenschter_start')} <span className="text-destructive" aria-hidden="true">*</span></Label>
         <DatePicker
           id="gewuenschter_start"
-          placeholder="Wann soll die Betreuung starten"
+          placeholder=""
           mode="date"
           value={fields.gewuenschter_start ?? null}
           onChange={v => setFields(f => ({ ...f, gewuenschter_start: v ?? undefined }))}
@@ -636,7 +636,7 @@ export function AnfragenDialog({ open, onClose, onSubmit, defaultValues, recordI
         <Label htmlFor="anfragenummer">{fieldLabel('anfragen', 'anfragenummer')}</Label>
         <Input
           id="anfragenummer"
-          placeholder="z. B. ANF-2025-001 (automatisch)"
+          placeholder=""
           value={fields.anfragenummer ?? ''}
           onChange={e => setFields(f => ({ ...f, anfragenummer: e.target.value }))}
         />
@@ -647,7 +647,7 @@ export function AnfragenDialog({ open, onClose, onSubmit, defaultValues, recordI
         <Label htmlFor="eingegangen_am">{fieldLabel('anfragen', 'eingegangen_am')}</Label>
         <DatePicker
           id="eingegangen_am"
-          placeholder="Eingangs-Datum"
+          placeholder=""
           mode="date"
           value={fields.eingegangen_am ?? null}
           onChange={v => setFields(f => ({ ...f, eingegangen_am: v ?? undefined }))}
@@ -661,7 +661,7 @@ export function AnfragenDialog({ open, onClose, onSubmit, defaultValues, recordI
           value={lookupKey(fields.status) ?? ''}
           onValueChange={v => setFields(f => ({ ...f, status: v === 'none' ? undefined : v as any }))}
         >
-          <SelectTrigger id="status" className="max-sm:h-11"><SelectValue placeholder="Aktueller Bearbeitungsstatus" /></SelectTrigger>
+          <SelectTrigger id="status" className="max-sm:h-11"><SelectValue placeholder="" /></SelectTrigger>
           <SelectContent>
             <SelectItem value="none">—</SelectItem>
             <SelectItem value="eingegangen">{lookupLabel('anfragen', 'status', 'eingegangen') ?? 'Eingegangen'}</SelectItem>
@@ -683,7 +683,7 @@ export function AnfragenDialog({ open, onClose, onSubmit, defaultValues, recordI
           inputMode="decimal"
           step="any"
           {...numberInputProps(formEnhancements, 'wartelistenplatz')}
-          placeholder="z. B. 3"
+          placeholder=""
           value={fields.wartelistenplatz !== undefined ? fields.wartelistenplatz : (computedValues['wartelistenplatz'] ?? '')}
           onChange={e => setFields(f => ({ ...f, wartelistenplatz: clampNumberValue(formEnhancements, 'wartelistenplatz', e.target.value) }))}
         />
@@ -694,7 +694,7 @@ export function AnfragenDialog({ open, onClose, onSubmit, defaultValues, recordI
         <Label htmlFor="entscheidung_am">{fieldLabel('anfragen', 'entscheidung_am')}</Label>
         <DatePicker
           id="entscheidung_am"
-          placeholder="Wann wurde entschieden"
+          placeholder=""
           mode="date"
           value={fields.entscheidung_am ?? null}
           onChange={v => setFields(f => ({ ...f, entscheidung_am: v ?? undefined }))}
@@ -706,7 +706,7 @@ export function AnfragenDialog({ open, onClose, onSubmit, defaultValues, recordI
         <Label htmlFor="ablehnungsgrund">{fieldLabel('anfragen', 'ablehnungsgrund')}</Label>
         <Textarea
           id="ablehnungsgrund"
-          placeholder="Warum wurde abgelehnt — Platz voll, Alter, etc."
+          placeholder=""
           value={fields.ablehnungsgrund ?? ''}
           onChange={e => setFields(f => ({ ...f, ablehnungsgrund: e.target.value }))}
           rows={3}
@@ -718,7 +718,7 @@ export function AnfragenDialog({ open, onClose, onSubmit, defaultValues, recordI
         <Label htmlFor="interne_notizen">{fieldLabel('anfragen', 'interne_notizen')}</Label>
         <Textarea
           id="interne_notizen"
-          placeholder="Vermerke, Besonderheiten, Gesprächsergebnisse..."
+          placeholder=""
           value={fields.interne_notizen ?? ''}
           onChange={e => setFields(f => ({ ...f, interne_notizen: e.target.value }))}
           rows={3}

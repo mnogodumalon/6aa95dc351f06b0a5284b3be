@@ -10,8 +10,8 @@ import DashboardReady from '@/pages/DashboardReady';
 import PublicPagesAdmin from '@/pages/PublicPagesAdmin';
 import IntentsAdmin from '@/pages/IntentsAdmin';
 // <custom:imports>
-const IntentAnfrageEntscheidenPage = lazy(() => import('@/pages/intents/AnfrageEntscheidenPage'));
 import { DashboardSkeleton } from '@/components/DashboardStates';
+const IntentAnfrageEntscheidenPage = lazy(() => import('@/pages/intents/AnfrageEntscheidenPage'));
 const IntentKontingentAnlegenPage = lazy(() => import('@/pages/intents/KontingentAnlegenPage'));
 // </custom:imports>
 

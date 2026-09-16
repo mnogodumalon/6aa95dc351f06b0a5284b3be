@@ -1,4 +1,0 @@
-{"debug":"Calling MCP tool: build_intent_pages","timestamp":"2026-09-16T13:04:24.934Z","sessionId":"4433751e-d277-4816-83e9-4c401998b86b","cwd":"/home/user/app"}
-{"debug":"Tool 'build_intent_pages' still running (30s elapsed)","timestamp":"2026-09-16T13:04:54.935Z","sessionId":"4433751e-d277-4816-83e9-4c401998b86b","cwd":"/home/user/app"}
-{"debug":"Tool 'build_intent_pages' still running (60s elapsed)","timestamp":"2026-09-16T13:05:24.938Z","sessionId":"4433751e-d277-4816-83e9-4c401998b86b","cwd":"/home/user/app"}
-{"debug":"Tool 'build_intent_pages' completed successfully in 1m 25s","timestamp":"2026-09-16T13:05:50.697Z","sessionId":"4433751e-d277-4816-83e9-4c401998b86b","cwd":"/home/user/app"}
