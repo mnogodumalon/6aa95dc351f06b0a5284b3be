@@ -341,6 +341,7 @@ export const UI_CATALOG: Record<CoreLocale, Record<string, string>> = {
     "ppa_can_view": "diese Daten sehen",
     "ppa_cannot_line": "bestehende Daten sehen oder ändern.",
     "ppa_cannot_change_line": "bestehende Daten ändern oder löschen.",
+    "ppa_link_param_note": "Der Link pro Eintrag zeigt Besuchern nur diesen einen Eintrag. Technisch lesbar sind über die Seite trotzdem alle Einträge der aufgeführten Listen — ein Scope in der Liste begrenzt das.",
     "ppa_cancel": "Abbrechen",
     "ppa_confirm_publish": "Veröffentlichen",
     "ps_preview_banner": "Vorschau — nur du siehst diese Seite. Absenden legt einen echten Eintrag an.",
@@ -910,6 +911,7 @@ export const UI_CATALOG: Record<CoreLocale, Record<string, string>> = {
     "ppa_can_view": "see this data",
     "ppa_cannot_line": "see or change existing data.",
     "ppa_cannot_change_line": "change or delete existing data.",
+    "ppa_link_param_note": "A per-record link shows a visitor just that one record. Technically the page can still read every record of the lists above — a scope on the list narrows that.",
     "ppa_cancel": "Cancel",
     "ppa_confirm_publish": "Publish",
     "ps_preview_banner": "Preview — only you can see this page. Submitting creates a real record.",
@@ -1353,7 +1355,7 @@ export const LABELS: Record<CoreLocale, LabelBundle> = {
     }
   },
   "en": {
-    "appgroup": "Kita Placement Forchheim",
+    "appgroup": "Kita Slot Allocation Forchheim",
     "apps": {
       "einrichtungen": {
         "name": "Facilities",
@@ -1368,7 +1370,7 @@ export const LABELS: Record<CoreLocale, LabelBundle> = {
           "plz": "Postal Code",
           "ort": "City",
           "telefon": "Phone",
-          "email": "E-Mail",
+          "email": "Email",
           "betreuungsformen": "Care Types",
           "oeffnungszeiten": "Opening Hours"
         },
@@ -1393,7 +1395,7 @@ export const LABELS: Record<CoreLocale, LabelBundle> = {
           "nachname": "Last Name",
           "rolle": "Role",
           "einrichtung": "Facility",
-          "email_ma": "E-Mail",
+          "email_ma": "Email",
           "telefon_ma": "Phone"
         },
         "lookups": {
@@ -1404,13 +1406,13 @@ export const LABELS: Record<CoreLocale, LabelBundle> = {
         }
       },
       "platzkontingente": {
-        "name": "Place Quotas",
+        "name": "Slot Quotas",
         "app_id": "6aa95d9ea2bf16980067e647",
         "fields": {
           "einrichtung": "Facility",
           "kita_jahr": "Kita Year",
           "betreuungsform": "Care Type",
-          "plaetze_gesamt": "Total Places"
+          "plaetze_gesamt": "Total Slots"
         },
         "lookups": {
           "betreuungsform": {
@@ -1433,7 +1435,7 @@ export const LABELS: Record<CoreLocale, LabelBundle> = {
           "plz": "Postal Code",
           "ort": "City",
           "besonderheiten": "Special Needs (Allergies, Support Requirements)",
-          "geschwisterkind": "Sibling Already Enrolled at a Facility"
+          "geschwisterkind": "Sibling Already Enrolled in a Facility"
         },
         "lookups": {
           "geschlecht": {
@@ -1450,7 +1452,7 @@ export const LABELS: Record<CoreLocale, LabelBundle> = {
           "kind": "Child",
           "eltern_vorname": "Parent First Name",
           "eltern_nachname": "Parent Last Name",
-          "eltern_email": "Parent E-Mail",
+          "eltern_email": "Parent Email",
           "eltern_telefon": "Parent Phone",
           "einrichtung": "Preferred Facility",
           "zweitwunsch_einrichtung": "Second-Choice Facility",
@@ -1461,8 +1463,8 @@ export const LABELS: Record<CoreLocale, LabelBundle> = {
           "anfragenummer": "Request Number",
           "eingegangen_am": "Received On",
           "status": "Status",
-          "wartelistenplatz": "Waiting List Position",
-          "entscheidung_am": "Decision Date",
+          "wartelistenplatz": "Waitlist Position",
+          "entscheidung_am": "Decision On",
           "ablehnungsgrund": "Rejection Reason",
           "interne_notizen": "Internal Notes"
         },
@@ -1480,7 +1482,7 @@ export const LABELS: Record<CoreLocale, LabelBundle> = {
           "status": {
             "eingegangen": "Received",
             "in_pruefung": "Under Review",
-            "warteliste": "Waiting List",
+            "warteliste": "Waitlist",
             "zugesagt": "Accepted",
             "abgelehnt": "Rejected",
             "zurueckgezogen": "Withdrawn"
