@@ -1355,7 +1355,7 @@ export const LABELS: Record<CoreLocale, LabelBundle> = {
     }
   },
   "en": {
-    "appgroup": "Kita Place Allocation Forchheim",
+    "appgroup": "Kita Spot Allocation Forchheim",
     "apps": {
       "einrichtungen": {
         "name": "Facilities",
@@ -1370,18 +1370,18 @@ export const LABELS: Record<CoreLocale, LabelBundle> = {
           "plz": "Postal Code",
           "ort": "City",
           "telefon": "Phone",
-          "email": "E-Mail",
+          "email": "Email",
           "betreuungsformen": "Care Types",
           "oeffnungszeiten": "Opening Hours"
         },
         "lookups": {
           "traegerart": {
-            "kirchlich": "Church-run",
+            "kirchlich": "Church-Based",
             "frei": "Independent",
             "staedtisch": "Municipal"
           },
           "betreuungsformen": {
-            "krippe": "Nursery (under 3 years)",
+            "krippe": "Infant Care (under 3 years)",
             "kindergarten": "Kindergarten (3–6 years)",
             "hort": "After-School Care"
           }
@@ -1395,7 +1395,7 @@ export const LABELS: Record<CoreLocale, LabelBundle> = {
           "nachname": "Last Name",
           "rolle": "Role",
           "einrichtung": "Facility",
-          "email_ma": "E-Mail",
+          "email_ma": "Email",
           "telefon_ma": "Phone"
         },
         "lookups": {
@@ -1418,7 +1418,7 @@ export const LABELS: Record<CoreLocale, LabelBundle> = {
           "betreuungsform": {
             "kindergarten": "Kindergarten (3–6 years)",
             "hort": "After-School Care",
-            "krippe": "Nursery (under 3 years)"
+            "krippe": "Infant Care (under 3 years)"
           }
         }
       },
@@ -1450,10 +1450,10 @@ export const LABELS: Record<CoreLocale, LabelBundle> = {
         "app_id": "6aa95da03d9608636c3c2843",
         "fields": {
           "kind": "Child",
-          "eltern_vorname": "Parent's First Name",
-          "eltern_nachname": "Parent's Last Name",
-          "eltern_email": "Parent's E-Mail",
-          "eltern_telefon": "Parent's Phone",
+          "eltern_vorname": "Parent First Name",
+          "eltern_nachname": "Parent Last Name",
+          "eltern_email": "Parent Email",
+          "eltern_telefon": "Parent Phone",
           "einrichtung": "Preferred Facility",
           "zweitwunsch_einrichtung": "Second Choice Facility",
           "betreuungsform": "Care Type",
@@ -1470,7 +1470,7 @@ export const LABELS: Record<CoreLocale, LabelBundle> = {
         },
         "lookups": {
           "betreuungsform": {
-            "krippe": "Nursery (under 3 years)",
+            "krippe": "Infant Care (under 3 years)",
             "kindergarten": "Kindergarten (3–6 years)",
             "hort": "After-School Care"
           },
