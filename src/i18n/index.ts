@@ -1376,7 +1376,7 @@ export const LABELS: Record<CoreLocale, LabelBundle> = {
         },
         "lookups": {
           "traegerart": {
-            "kirchlich": "Church-run",
+            "kirchlich": "Religious",
             "frei": "Independent",
             "staedtisch": "Municipal"
           },
@@ -1406,7 +1406,7 @@ export const LABELS: Record<CoreLocale, LabelBundle> = {
         }
       },
       "platzkontingente": {
-        "name": "Slot Quotas",
+        "name": "Slot Contingents",
         "app_id": "6aa95d9ea2bf16980067e647",
         "fields": {
           "einrichtung": "Facility",
@@ -1455,7 +1455,7 @@ export const LABELS: Record<CoreLocale, LabelBundle> = {
           "eltern_email": "Parent Email",
           "eltern_telefon": "Parent Phone",
           "einrichtung": "Preferred Facility",
-          "zweitwunsch_einrichtung": "Second-Choice Facility",
+          "zweitwunsch_einrichtung": "Second Choice Facility",
           "betreuungsform": "Care Type",
           "gewuenschter_start": "Desired Care Start Date",
           "betreuungsumfang": "Care Scope",
