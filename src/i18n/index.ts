@@ -1370,20 +1370,20 @@ export const LABELS: Record<CoreLocale, LabelBundle> = {
           "plz": "Postal Code",
           "ort": "City",
           "telefon": "Phone",
-          "email": "Email",
+          "email": "E-Mail",
           "betreuungsformen": "Care Types",
           "oeffnungszeiten": "Opening Hours"
         },
         "lookups": {
           "traegerart": {
-            "kirchlich": "Church-based",
+            "kirchlich": "Church-run",
             "frei": "Independent",
             "staedtisch": "Municipal"
           },
           "betreuungsformen": {
             "krippe": "Nursery (under 3 years)",
             "kindergarten": "Kindergarten (3–6 years)",
-            "hort": "After-school Care"
+            "hort": "After-School Care"
           }
         }
       },
@@ -1395,7 +1395,7 @@ export const LABELS: Record<CoreLocale, LabelBundle> = {
           "nachname": "Last Name",
           "rolle": "Role",
           "einrichtung": "Facility",
-          "email_ma": "Email",
+          "email_ma": "E-Mail",
           "telefon_ma": "Phone"
         },
         "lookups": {
@@ -1417,7 +1417,7 @@ export const LABELS: Record<CoreLocale, LabelBundle> = {
         "lookups": {
           "betreuungsform": {
             "kindergarten": "Kindergarten (3–6 years)",
-            "hort": "After-school Care",
+            "hort": "After-School Care",
             "krippe": "Nursery (under 3 years)"
           }
         }
@@ -1450,10 +1450,10 @@ export const LABELS: Record<CoreLocale, LabelBundle> = {
         "app_id": "6aa95da03d9608636c3c2843",
         "fields": {
           "kind": "Child",
-          "eltern_vorname": "Parent First Name",
-          "eltern_nachname": "Parent Last Name",
-          "eltern_email": "Parent Email",
-          "eltern_telefon": "Parent Phone",
+          "eltern_vorname": "Parent's First Name",
+          "eltern_nachname": "Parent's Last Name",
+          "eltern_email": "Parent's E-Mail",
+          "eltern_telefon": "Parent's Phone",
           "einrichtung": "Preferred Facility",
           "zweitwunsch_einrichtung": "Second Choice Facility",
           "betreuungsform": "Care Type",
@@ -1464,7 +1464,7 @@ export const LABELS: Record<CoreLocale, LabelBundle> = {
           "eingegangen_am": "Received On",
           "status": "Status",
           "wartelistenplatz": "Waitlist Position",
-          "entscheidung_am": "Decision Date",
+          "entscheidung_am": "Decision On",
           "ablehnungsgrund": "Rejection Reason",
           "interne_notizen": "Internal Notes"
         },
@@ -1472,11 +1472,11 @@ export const LABELS: Record<CoreLocale, LabelBundle> = {
           "betreuungsform": {
             "krippe": "Nursery (under 3 years)",
             "kindergarten": "Kindergarten (3–6 years)",
-            "hort": "After-school Care"
+            "hort": "After-School Care"
           },
           "betreuungsumfang": {
-            "halbtags": "Half-day",
-            "ganztags": "Full-day",
+            "halbtags": "Half-Day",
+            "ganztags": "Full-Day",
             "verlaengert": "Extended"
           },
           "status": {
