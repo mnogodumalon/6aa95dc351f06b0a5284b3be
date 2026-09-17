@@ -1355,7 +1355,7 @@ export const LABELS: Record<CoreLocale, LabelBundle> = {
     }
   },
   "en": {
-    "appgroup": "Kita Slot Allocation Forchheim",
+    "appgroup": "Kita Place Allocation Forchheim",
     "apps": {
       "einrichtungen": {
         "name": "Facilities",
@@ -1376,7 +1376,7 @@ export const LABELS: Record<CoreLocale, LabelBundle> = {
         },
         "lookups": {
           "traegerart": {
-            "kirchlich": "Religious",
+            "kirchlich": "Church-based",
             "frei": "Independent",
             "staedtisch": "Municipal"
           },
@@ -1406,13 +1406,13 @@ export const LABELS: Record<CoreLocale, LabelBundle> = {
         }
       },
       "platzkontingente": {
-        "name": "Slot Contingents",
+        "name": "Place Quotas",
         "app_id": "6aa95d9ea2bf16980067e647",
         "fields": {
           "einrichtung": "Facility",
           "kita_jahr": "Kita Year",
           "betreuungsform": "Care Type",
-          "plaetze_gesamt": "Total Slots"
+          "plaetze_gesamt": "Total Places"
         },
         "lookups": {
           "betreuungsform": {
@@ -1450,10 +1450,10 @@ export const LABELS: Record<CoreLocale, LabelBundle> = {
         "app_id": "6aa95da03d9608636c3c2843",
         "fields": {
           "kind": "Child",
-          "eltern_vorname": "Parent First Name",
-          "eltern_nachname": "Parent Last Name",
-          "eltern_email": "Parent Email",
-          "eltern_telefon": "Parent Phone",
+          "eltern_vorname": "Parent's First Name",
+          "eltern_nachname": "Parent's Last Name",
+          "eltern_email": "Parent's Email",
+          "eltern_telefon": "Parent's Phone",
           "einrichtung": "Preferred Facility",
           "zweitwunsch_einrichtung": "Second Choice Facility",
           "betreuungsform": "Care Type",
@@ -1465,7 +1465,7 @@ export const LABELS: Record<CoreLocale, LabelBundle> = {
           "status": "Status",
           "wartelistenplatz": "Waitlist Position",
           "entscheidung_am": "Decision On",
-          "ablehnungsgrund": "Rejection Reason",
+          "ablehnungsgrund": "Reason for Rejection",
           "interne_notizen": "Internal Notes"
         },
         "lookups": {
