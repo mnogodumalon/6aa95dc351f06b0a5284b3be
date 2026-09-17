@@ -1355,7 +1355,7 @@ export const LABELS: Record<CoreLocale, LabelBundle> = {
     }
   },
   "en": {
-    "appgroup": "Kita Spot Allocation Forchheim",
+    "appgroup": "Kita Place Allocation Forchheim",
     "apps": {
       "einrichtungen": {
         "name": "Facilities",
@@ -1376,12 +1376,12 @@ export const LABELS: Record<CoreLocale, LabelBundle> = {
         },
         "lookups": {
           "traegerart": {
-            "kirchlich": "Church-Based",
+            "kirchlich": "Religious",
             "frei": "Independent",
             "staedtisch": "Municipal"
           },
           "betreuungsformen": {
-            "krippe": "Infant Care (under 3 years)",
+            "krippe": "Nursery (under 3 years)",
             "kindergarten": "Kindergarten (3–6 years)",
             "hort": "After-School Care"
           }
@@ -1418,7 +1418,7 @@ export const LABELS: Record<CoreLocale, LabelBundle> = {
           "betreuungsform": {
             "kindergarten": "Kindergarten (3–6 years)",
             "hort": "After-School Care",
-            "krippe": "Infant Care (under 3 years)"
+            "krippe": "Nursery (under 3 years)"
           }
         }
       },
@@ -1470,7 +1470,7 @@ export const LABELS: Record<CoreLocale, LabelBundle> = {
         },
         "lookups": {
           "betreuungsform": {
-            "krippe": "Infant Care (under 3 years)",
+            "krippe": "Nursery (under 3 years)",
             "kindergarten": "Kindergarten (3–6 years)",
             "hort": "After-School Care"
           },

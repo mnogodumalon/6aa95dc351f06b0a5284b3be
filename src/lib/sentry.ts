@@ -6,7 +6,7 @@ const ENVIRONMENT = "dashboard-6aa95dc351f06b0a5284b3be";
  *  the deployment's `version.json`. Exported so `lib/stale-bundle.ts` can tell a
  *  tab that is merely older than the live deployment apart from one whose asset
  *  is genuinely gone. One source for the fact; do not inject it a second time. */
-export const BUNDLE_VERSION = "0.0.422";
+export const BUNDLE_VERSION = "0.0.424";
 const APPGROUP_ID = "6aa95dc351f06b0a5284b3be";
 
 if (DSN) {
