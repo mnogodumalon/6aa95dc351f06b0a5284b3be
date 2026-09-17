@@ -1383,7 +1383,7 @@ export const LABELS: Record<CoreLocale, LabelBundle> = {
           "betreuungsformen": {
             "krippe": "Nursery (under 3 years)",
             "kindergarten": "Kindergarten (3–6 years)",
-            "hort": "After-School Care"
+            "hort": "After-school Care"
           }
         }
       },
@@ -1417,7 +1417,7 @@ export const LABELS: Record<CoreLocale, LabelBundle> = {
         "lookups": {
           "betreuungsform": {
             "kindergarten": "Kindergarten (3–6 years)",
-            "hort": "After-School Care",
+            "hort": "After-school Care",
             "krippe": "Nursery (under 3 years)"
           }
         }
@@ -1450,10 +1450,10 @@ export const LABELS: Record<CoreLocale, LabelBundle> = {
         "app_id": "6aa95da03d9608636c3c2843",
         "fields": {
           "kind": "Child",
-          "eltern_vorname": "Parent's First Name",
-          "eltern_nachname": "Parent's Last Name",
-          "eltern_email": "Parent's Email",
-          "eltern_telefon": "Parent's Phone",
+          "eltern_vorname": "Parent First Name",
+          "eltern_nachname": "Parent Last Name",
+          "eltern_email": "Parent Email",
+          "eltern_telefon": "Parent Phone",
           "einrichtung": "Preferred Facility",
           "zweitwunsch_einrichtung": "Second Choice Facility",
           "betreuungsform": "Care Type",
@@ -1464,19 +1464,19 @@ export const LABELS: Record<CoreLocale, LabelBundle> = {
           "eingegangen_am": "Received On",
           "status": "Status",
           "wartelistenplatz": "Waitlist Position",
-          "entscheidung_am": "Decision On",
-          "ablehnungsgrund": "Reason for Rejection",
+          "entscheidung_am": "Decision Date",
+          "ablehnungsgrund": "Rejection Reason",
           "interne_notizen": "Internal Notes"
         },
         "lookups": {
           "betreuungsform": {
             "krippe": "Nursery (under 3 years)",
             "kindergarten": "Kindergarten (3–6 years)",
-            "hort": "After-School Care"
+            "hort": "After-school Care"
           },
           "betreuungsumfang": {
-            "halbtags": "Half-Day",
-            "ganztags": "Full-Day",
+            "halbtags": "Half-day",
+            "ganztags": "Full-day",
             "verlaengert": "Extended"
           },
           "status": {
